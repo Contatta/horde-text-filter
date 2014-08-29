@@ -22,5 +22,8 @@
         }
     ],
     "version": "2.1.5",
-    "time": "2013-10-24"
+    "time": "2013-10-24",
+    "autoload": {
+        "classmap": ["lib/"]
+    }
 }
