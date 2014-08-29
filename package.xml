@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Horde_Text_Filter</name>
+ <channel>pear.horde.org</channel>
+ <summary>Horde Text Filter API</summary>
+ <description>Common methods for fitering and converting text.</description>
+ <lead>
+  <name>Chuck Hagenbuch</name>
+  <user>chuck</user>
+  <email>chuck@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Jan Schneider</name>
+  <user>jan</user>
+  <email>jan@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>Michael Slusarz</name>
+  <user>slusarz</user>
+  <email>slusarz@horde.org</email>
+  <active>yes</active>
+ </developer>
+ <date>2014-05-02</date>
+ <time>13:34:27</time>
+ <version>
+  <release>2.2.1</release>
+  <api>2.2.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+ <notes>
+* [mms] Javascript minification has been deprecated and moved to the Horde_JavascriptMinify package.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="321bf41f280cf805086dd5a720b37785" name="doc/Horde/Text/Filter/COPYING" role="doc" />
+   <file baseinstalldir="/" md5sum="182ff8fc432df5bb645dd828061543f0" name="lib/Horde/Text/Filter/Base.php" role="php" />
+   <file baseinstalldir="/" md5sum="6b3025fdfe23cd1aa8d53905a1ea430a" name="lib/Horde/Text/Filter/Bbcode.php" role="php" />
+   <file baseinstalldir="/" md5sum="c046acb839aebca7d7d3406f9d185334" name="lib/Horde/Text/Filter/Cleanascii.php" role="php" />
+   <file baseinstalldir="/" md5sum="43155b045733e520e9160466aa0acca2" name="lib/Horde/Text/Filter/Cleanhtml.php" role="php" />
+   <file baseinstalldir="/" md5sum="ca2b6fc03dc43856dcaa5ae812f81806" name="lib/Horde/Text/Filter/Dimsignature.php" role="php" />
+   <file baseinstalldir="/" md5sum="5c3d8ab0fda513628ba07d0b4b62cc08" name="lib/Horde/Text/Filter/Emails.php" role="php" />
+   <file baseinstalldir="/" md5sum="b00253f32f0deb3ef264ef60674b4823" name="lib/Horde/Text/Filter/Emoticons.php" role="php" />
+   <file baseinstalldir="/" md5sum="464cc1e3f2d58c2f34271ed967ed83a3" name="lib/Horde/Text/Filter/Environment.php" role="php" />
+   <file baseinstalldir="/" md5sum="993c78fb383a3fd1b0329e402435f0fe" name="lib/Horde/Text/Filter/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="e62cf289ae73994d885a036ce5ff378a" name="lib/Horde/Text/Filter/Highlightquotes.php" role="php" />
+   <file baseinstalldir="/" md5sum="775287def2e33b2050c204963c604c42" name="lib/Horde/Text/Filter/Html2text.php" role="php" />
+   <file baseinstalldir="/" md5sum="f07e0a3275c44301aae1bda105d7a029" name="lib/Horde/Text/Filter/JavascriptMinify.php" role="php" />
+   <file baseinstalldir="/" md5sum="c654997e381f308be871ee7ca945f4ce" name="lib/Horde/Text/Filter/Linkurls.php" role="php" />
+   <file baseinstalldir="/" md5sum="2b492ce8a6ab463dcaeb0490a78ca4e4" name="lib/Horde/Text/Filter/Simplemarkup.php" role="php" />
+   <file baseinstalldir="/" md5sum="62353f0eb4bfa314bd79c2f384913c41" name="lib/Horde/Text/Filter/Space2html.php" role="php" />
+   <file baseinstalldir="/" md5sum="455b26c2c414eef63eaaf489c92d3fc5" name="lib/Horde/Text/Filter/Tabs2spaces.php" role="php" />
+   <file baseinstalldir="/" md5sum="40f28e66a8020b87ee709ab181f3ff2e" name="lib/Horde/Text/Filter/Text2html.php" role="php" />
+   <file baseinstalldir="/" md5sum="2fe522dd410dd5ffa4ed71b41fea0712" name="lib/Horde/Text/Filter/Translation.php" role="php">
+    <tasks:replace from="@data_dir@" to="data_dir" type="pear-config" />
+   </file>
+   <file baseinstalldir="/" md5sum="965ba68e0c3b984a75e98afb7a9f0656" name="lib/Horde/Text/Filter/Words.php" role="php" />
+   <file baseinstalldir="/" md5sum="0e1269f45a60422c8693bfc39ec14d58" name="lib/Horde/Text/Filter/Xss.php" role="php" />
+   <file baseinstalldir="/" md5sum="a4f08460bfb65cf3124a15a666eb5572" name="lib/Horde/Text/Filter.php" role="php" />
+   <file baseinstalldir="/" md5sum="c066de01146dcb3d629acf26677dbd32" name="locale/ar/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="38ade1335b9bd6f80fa88908bedeb010" name="locale/ar/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="c066de01146dcb3d629acf26677dbd32" name="locale/bg/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="7416af2d0a9b1d679e0e664b11a76f90" name="locale/bg/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="f6d57ca3d6ae2a9e1e6f64bd66154e74" name="locale/bs/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="abc66c23b144c842923bccdb367e715e" name="locale/bs/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="9b2f7ba01609807c4c7be1a162cfab04" name="locale/ca/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="46d160bd95b684bde6715fc420f3abca" name="locale/ca/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="3d68aee1ed92406b41c51287de5f8f39" name="locale/cs/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="693cefda5fb7d4cc4f83580f994d5781" name="locale/cs/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="41c49e56a6c83c077cdb0770d1095607" name="locale/da/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="427d38a2e866000cb3dff1d1a3c766d0" name="locale/da/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="3500d6300cd21ce0cfb9fb5a4f65367b" name="locale/de/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="b61f8af3ed5fb014f4158b4dc996edf6" name="locale/de/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="3911bd70f011c827f62ce019be783264" name="locale/el/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="f3afcfccd1984ccd8f3d08dd5a2a4250" name="locale/el/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="185a83feb80585f4e90f0f8458054195" name="locale/en/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="1609e7d3333c7e5b536a835a7c6a1c17" name="locale/en/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="60c4febdc223d0d0f0f7fd0b9b77d0cf" name="locale/es/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="c58027f2b4d5bb9f127ec02d6912e091" name="locale/es/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="6fe9c211696c49410fac6c1e584cb253" name="locale/et/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="eb2e94a91946f1a673170e8152485d61" name="locale/et/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="21e61dae02b072e00b1a0651bf172fc5" name="locale/eu/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="b58b8470885b177994ff07bccd083230" name="locale/eu/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="7865bded6a098fc7e434b11a331c427d" name="locale/fa/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="24fc77ed214d278653af345a30952ecc" name="locale/fa/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="ce83365e302e59f994ae45d561eed015" name="locale/fi/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="31a8b242d8d2c61557e4861d6ce2f485" name="locale/fi/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="d3d3633f4cc2ee466f5849297c2f3028" name="locale/fr/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="2a2c3720f309a0b9d2e06248e03ee2e9" name="locale/fr/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="c066de01146dcb3d629acf26677dbd32" name="locale/gl/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="25523d59468d01cdfc2de42e24dca4f7" name="locale/gl/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="a061359706ed2094220f1fd93dd190a7" name="locale/he/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="14fcd508114e7fc4748627e78fea5b0d" name="locale/he/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="ee012ea51cfa5f2e592bce161e3018f7" name="locale/hr/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="43a58189d9e540485871071373b18bea" name="locale/hr/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="e52014a0bc6885ee58d958d4b0dd53ab" name="locale/hu/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="1143b03959f754971c55c9b069e69845" name="locale/hu/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="cc72cd9e90b92fd19beef19572a0dd07" name="locale/id/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="404263a22b46deb599df732ba570425e" name="locale/id/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="c066de01146dcb3d629acf26677dbd32" name="locale/is/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="b10f34cf0afbe966953d6d3e8df004da" name="locale/is/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="ac89e54c325b3ef4321d5a28e71f0764" name="locale/it/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="d581630edb7c5f801e2d338535d0c241" name="locale/it/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="1db69975ce07ebd366484f9a464aabbc" name="locale/ja/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="1ebcf4a4157d79ae27f3b375437a0c4a" name="locale/ja/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="a09b84be45e7b13e5862ce56e6eab3b8" name="locale/km/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="bbcae1c163cdb150c1a33f8e142755d6" name="locale/km/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="34e32a615fe0f6472b62e2d1bb44c742" name="locale/ko/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="77011d22ae4b052a4ef4025d2affe258" name="locale/ko/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="9ec7bf7e7bb46b58b99c19c98a2ac405" name="locale/lt/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="82a1c3b5d267c4718d92e4ab7ed0671c" name="locale/lt/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="4214f6430d6925bf9c579b0e43294b5e" name="locale/lv/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="1e336f5e65ae4d294fdef06322ca21d2" name="locale/lv/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="c066de01146dcb3d629acf26677dbd32" name="locale/mk/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="6047860a75dc8a4a761070e548501796" name="locale/mk/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="f80104cb6d077eca27e9ccb1acb06b36" name="locale/nb/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="c749bb8027887669397901e10762c3d5" name="locale/nb/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="3fe622ec61f5e97107f244ca04402138" name="locale/nl/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="c46f2121814a1fbb9ef6d43df6abab99" name="locale/nl/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="a061359706ed2094220f1fd93dd190a7" name="locale/nn/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="b48d1f138ae3a4bbb56ab8bc2d49ffe5" name="locale/nn/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="5096cdbae12f20240e30395aa9610acc" name="locale/pl/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="a8005759067485a09aea32b8311669cc" name="locale/pl/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="481434a3e4506288938f710b8ab591e4" name="locale/pt/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="f3ca76f8ec438a5b60e32e172d3587ce" name="locale/pt/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="ee17e63f04488b0368335d1d7c93734b" name="locale/pt_BR/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="3dbd32d5d4800f25780a864ba1e4c21d" name="locale/pt_BR/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="2cb8ffaf6de98a98dff06203f91141e7" name="locale/ro/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="6c2af7aaf2e798636d83ad41ab7d5593" name="locale/ro/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="f3b3e6dc6bca16f528124d99bb0bb381" name="locale/ru/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="9ab706c02171735190bf4ea0137b06b8" name="locale/ru/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="e3021bbb6b7850a38e09b263b9ddc439" name="locale/sk/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="ff920f5cb0cc919d7090f39d9a59a341" name="locale/sk/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="ab6850eb09117f3246b371f08fa4def3" name="locale/sl/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="1cab8fa903e3160a5d812b28c0af74c2" name="locale/sl/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="30fee0162b458209b5702c9cd6a05af3" name="locale/sv/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="c6ed9ccb2c6974096f5113260a5aed0a" name="locale/sv/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="2139a34f47aec7edda20de7088343434" name="locale/tr/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="30cb6123111a3929e588824d5e4935ee" name="locale/tr/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="f3b3e6dc6bca16f528124d99bb0bb381" name="locale/uk/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="4fe74fa85a7804778e4bc359095b87b1" name="locale/uk/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="9466fccc611be13164cde5b20144ced8" name="locale/zh_CN/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="29fe3cbbfb8bb88ca204f2199728137a" name="locale/zh_CN/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="a4c5b00cc4f77df9068d2600df2d77f9" name="locale/zh_TW/LC_MESSAGES/Horde_Text_Filter.mo" role="data" />
+   <file baseinstalldir="/" md5sum="cf80d9072377ee142082531b1226320b" name="locale/zh_TW/LC_MESSAGES/Horde_Text_Filter.po" role="data" />
+   <file baseinstalldir="/" md5sum="bc0c0969be0602161329f3b8c8f01ee1" name="locale/Horde_Text_Filter.pot" role="data" />
+   <file baseinstalldir="/" md5sum="cbc76ed8d0338afb5ee0ead633ec7ae3" name="test/Horde/Text/Filter/fixtures/bug_11116.txt" role="test" />
+   <file baseinstalldir="/" md5sum="8bc9518b9c0576806c82d9413489d099" name="test/Horde/Text/Filter/AllTests.php" role="test" />
+   <file baseinstalldir="/" md5sum="0a5018f0726d4673850fece3ad4d72c0" name="test/Horde/Text/Filter/bootstrap.php" role="test" />
+   <file baseinstalldir="/" md5sum="1d1905b972ac90227bfbbb252f2e34d2" name="test/Horde/Text/Filter/EmailsTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="cdf9a36497de44e1104f44e33409de47" name="test/Horde/Text/Filter/EnvironmentTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="6bbe5f76fe2c6eac55824beae3793034" name="test/Horde/Text/Filter/Html2textTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="08daf53a9ebf4790565eba47bcec39fc" name="test/Horde/Text/Filter/LinkurlsTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="5c7bc7698a695b2c104d76bee00e5aa0" name="test/Horde/Text/Filter/phpunit.xml" role="test" />
+   <file baseinstalldir="/" md5sum="56d6c97e7f514cc77d615e996491e56c" name="test/Horde/Text/Filter/Space2htmlTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="8b23a8b9c4bd02318908c62c83758fc8" name="test/Horde/Text/Filter/Text2htmlTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="2919431ef672d7a1977e24bd9f64c041" name="test/Horde/Text/Filter/WordsTest.php" role="test" />
+   <file baseinstalldir="/" md5sum="60aad353a5f61c571e82e78091112d61" name="test/Horde/Text/Filter/XssTest.php" role="test" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+    <max>6.0.0alpha1</max>
+    <exclude>6.0.0alpha1</exclude>
+   </php>
+   <pearinstaller>
+    <min>1.7.0</min>
+   </pearinstaller>
+   <package>
+    <name>Horde_Exception</name>
+    <channel>pear.horde.org</channel>
+    <min>2.0.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+   <package>
+    <name>Horde_Util</name>
+    <channel>pear.horde.org</channel>
+    <min>2.0.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+  </required>
+  <optional>
+   <package>
+    <name>Horde_Test</name>
+    <channel>pear.horde.org</channel>
+    <min>2.1.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+   <package>
+    <name>Horde_Text_Filter_Jsmin</name>
+    <channel>pear.horde.org</channel>
+    <min>1.0.0</min>
+    <max>2.0.0alpha1</max>
+    <exclude>2.0.0alpha1</exclude>
+   </package>
+   <package>
+    <name>Horde_Text_Flowed</name>
+    <channel>pear.horde.org</channel>
+    <min>2.0.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+   <package>
+    <name>Horde_Translation</name>
+    <channel>pear.horde.org</channel>
+    <min>2.0.0</min>
+    <max>3.0.0alpha1</max>
+    <exclude>3.0.0alpha1</exclude>
+   </package>
+   <extension>
+    <name>tidy</name>
+   </extension>
+  </optional>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="COPYING" name="doc/Horde/Text/Filter/COPYING" />
+   <install as="Horde/Text/Filter.php" name="lib/Horde/Text/Filter.php" />
+   <install as="Horde/Text/Filter/Base.php" name="lib/Horde/Text/Filter/Base.php" />
+   <install as="Horde/Text/Filter/Bbcode.php" name="lib/Horde/Text/Filter/Bbcode.php" />
+   <install as="Horde/Text/Filter/Cleanascii.php" name="lib/Horde/Text/Filter/Cleanascii.php" />
+   <install as="Horde/Text/Filter/Cleanhtml.php" name="lib/Horde/Text/Filter/Cleanhtml.php" />
+   <install as="Horde/Text/Filter/Dimsignature.php" name="lib/Horde/Text/Filter/Dimsignature.php" />
+   <install as="Horde/Text/Filter/Emails.php" name="lib/Horde/Text/Filter/Emails.php" />
+   <install as="Horde/Text/Filter/Emoticons.php" name="lib/Horde/Text/Filter/Emoticons.php" />
+   <install as="Horde/Text/Filter/Environment.php" name="lib/Horde/Text/Filter/Environment.php" />
+   <install as="Horde/Text/Filter/Exception.php" name="lib/Horde/Text/Filter/Exception.php" />
+   <install as="Horde/Text/Filter/Highlightquotes.php" name="lib/Horde/Text/Filter/Highlightquotes.php" />
+   <install as="Horde/Text/Filter/Html2text.php" name="lib/Horde/Text/Filter/Html2text.php" />
+   <install as="Horde/Text/Filter/JavascriptMinify.php" name="lib/Horde/Text/Filter/JavascriptMinify.php" />
+   <install as="Horde/Text/Filter/Linkurls.php" name="lib/Horde/Text/Filter/Linkurls.php" />
+   <install as="Horde/Text/Filter/Simplemarkup.php" name="lib/Horde/Text/Filter/Simplemarkup.php" />
+   <install as="Horde/Text/Filter/Space2html.php" name="lib/Horde/Text/Filter/Space2html.php" />
+   <install as="Horde/Text/Filter/Tabs2spaces.php" name="lib/Horde/Text/Filter/Tabs2spaces.php" />
+   <install as="Horde/Text/Filter/Text2html.php" name="lib/Horde/Text/Filter/Text2html.php" />
+   <install as="Horde/Text/Filter/Translation.php" name="lib/Horde/Text/Filter/Translation.php" />
+   <install as="Horde/Text/Filter/Words.php" name="lib/Horde/Text/Filter/Words.php" />
+   <install as="Horde/Text/Filter/Xss.php" name="lib/Horde/Text/Filter/Xss.php" />
+   <install as="locale/Horde_Text_Filter.pot" name="locale/Horde_Text_Filter.pot" />
+   <install as="locale/ar/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/ar/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/ar/LC_MESSAGES/Horde_Text_Filter.po" name="locale/ar/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/bg/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/bg/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/bg/LC_MESSAGES/Horde_Text_Filter.po" name="locale/bg/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/bs/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/bs/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/bs/LC_MESSAGES/Horde_Text_Filter.po" name="locale/bs/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/ca/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/ca/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/ca/LC_MESSAGES/Horde_Text_Filter.po" name="locale/ca/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/cs/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/cs/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/cs/LC_MESSAGES/Horde_Text_Filter.po" name="locale/cs/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/da/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/da/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/da/LC_MESSAGES/Horde_Text_Filter.po" name="locale/da/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/de/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/de/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/de/LC_MESSAGES/Horde_Text_Filter.po" name="locale/de/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/el/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/el/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/el/LC_MESSAGES/Horde_Text_Filter.po" name="locale/el/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/en/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/en/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/en/LC_MESSAGES/Horde_Text_Filter.po" name="locale/en/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/es/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/es/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/es/LC_MESSAGES/Horde_Text_Filter.po" name="locale/es/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/et/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/et/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/et/LC_MESSAGES/Horde_Text_Filter.po" name="locale/et/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/eu/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/eu/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/eu/LC_MESSAGES/Horde_Text_Filter.po" name="locale/eu/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/fa/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/fa/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/fa/LC_MESSAGES/Horde_Text_Filter.po" name="locale/fa/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/fi/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/fi/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/fi/LC_MESSAGES/Horde_Text_Filter.po" name="locale/fi/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/fr/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/fr/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/fr/LC_MESSAGES/Horde_Text_Filter.po" name="locale/fr/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/gl/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/gl/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/gl/LC_MESSAGES/Horde_Text_Filter.po" name="locale/gl/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/he/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/he/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/he/LC_MESSAGES/Horde_Text_Filter.po" name="locale/he/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/hr/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/hr/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/hr/LC_MESSAGES/Horde_Text_Filter.po" name="locale/hr/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/hu/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/hu/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/hu/LC_MESSAGES/Horde_Text_Filter.po" name="locale/hu/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/id/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/id/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/id/LC_MESSAGES/Horde_Text_Filter.po" name="locale/id/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/is/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/is/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/is/LC_MESSAGES/Horde_Text_Filter.po" name="locale/is/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/it/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/it/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/it/LC_MESSAGES/Horde_Text_Filter.po" name="locale/it/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/ja/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/ja/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/ja/LC_MESSAGES/Horde_Text_Filter.po" name="locale/ja/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/km/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/km/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/km/LC_MESSAGES/Horde_Text_Filter.po" name="locale/km/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/ko/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/ko/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/ko/LC_MESSAGES/Horde_Text_Filter.po" name="locale/ko/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/lt/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/lt/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/lt/LC_MESSAGES/Horde_Text_Filter.po" name="locale/lt/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/lv/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/lv/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/lv/LC_MESSAGES/Horde_Text_Filter.po" name="locale/lv/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/mk/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/mk/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/mk/LC_MESSAGES/Horde_Text_Filter.po" name="locale/mk/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/nb/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/nb/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/nb/LC_MESSAGES/Horde_Text_Filter.po" name="locale/nb/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/nl/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/nl/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/nl/LC_MESSAGES/Horde_Text_Filter.po" name="locale/nl/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/nn/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/nn/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/nn/LC_MESSAGES/Horde_Text_Filter.po" name="locale/nn/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/pl/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/pl/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/pl/LC_MESSAGES/Horde_Text_Filter.po" name="locale/pl/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/pt/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/pt/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/pt/LC_MESSAGES/Horde_Text_Filter.po" name="locale/pt/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/pt_BR/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/pt_BR/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/pt_BR/LC_MESSAGES/Horde_Text_Filter.po" name="locale/pt_BR/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/ro/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/ro/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/ro/LC_MESSAGES/Horde_Text_Filter.po" name="locale/ro/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/ru/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/ru/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/ru/LC_MESSAGES/Horde_Text_Filter.po" name="locale/ru/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/sk/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/sk/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/sk/LC_MESSAGES/Horde_Text_Filter.po" name="locale/sk/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/sl/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/sl/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/sl/LC_MESSAGES/Horde_Text_Filter.po" name="locale/sl/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/sv/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/sv/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/sv/LC_MESSAGES/Horde_Text_Filter.po" name="locale/sv/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/tr/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/tr/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/tr/LC_MESSAGES/Horde_Text_Filter.po" name="locale/tr/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/uk/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/uk/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/uk/LC_MESSAGES/Horde_Text_Filter.po" name="locale/uk/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/zh_CN/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/zh_CN/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/zh_CN/LC_MESSAGES/Horde_Text_Filter.po" name="locale/zh_CN/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="locale/zh_TW/LC_MESSAGES/Horde_Text_Filter.mo" name="locale/zh_TW/LC_MESSAGES/Horde_Text_Filter.mo" />
+   <install as="locale/zh_TW/LC_MESSAGES/Horde_Text_Filter.po" name="locale/zh_TW/LC_MESSAGES/Horde_Text_Filter.po" />
+   <install as="Horde/Text/Filter/AllTests.php" name="test/Horde/Text/Filter/AllTests.php" />
+   <install as="Horde/Text/Filter/bootstrap.php" name="test/Horde/Text/Filter/bootstrap.php" />
+   <install as="Horde/Text/Filter/EmailsTest.php" name="test/Horde/Text/Filter/EmailsTest.php" />
+   <install as="Horde/Text/Filter/EnvironmentTest.php" name="test/Horde/Text/Filter/EnvironmentTest.php" />
+   <install as="Horde/Text/Filter/Html2textTest.php" name="test/Horde/Text/Filter/Html2textTest.php" />
+   <install as="Horde/Text/Filter/LinkurlsTest.php" name="test/Horde/Text/Filter/LinkurlsTest.php" />
+   <install as="Horde/Text/Filter/phpunit.xml" name="test/Horde/Text/Filter/phpunit.xml" />
+   <install as="Horde/Text/Filter/Space2htmlTest.php" name="test/Horde/Text/Filter/Space2htmlTest.php" />
+   <install as="Horde/Text/Filter/Text2htmlTest.php" name="test/Horde/Text/Filter/Text2htmlTest.php" />
+   <install as="Horde/Text/Filter/WordsTest.php" name="test/Horde/Text/Filter/WordsTest.php" />
+   <install as="Horde/Text/Filter/XssTest.php" name="test/Horde/Text/Filter/XssTest.php" />
+   <install as="Horde/Text/Filter/fixtures/bug_11116.txt" name="test/Horde/Text/Filter/fixtures/bug_11116.txt" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2004-10-12</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+Initial release as a PEAR package
+   </notes>
+  </release>
+  <release>
+   <date>2006-05-08</date>
+   <time>23:39:08</time>
+   <version>
+    <release>0.0.2</release>
+    <api>0.0.2</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* Don&apos;t strip BASE tags when &apos;strip_styles&apos; is false.
+* Added ability to link &lt;test@example.com&gt; e-mail addresses in plain text.
+* Removed dependency on external javascript file when toggling quoted lines.
+* Converted to package.xml 2.0 for pear.horde.org
+* Allow the bad words filter to leave the first character of a matching word and replace the rest with &apos;*&apos; (duck@obala.net).
+* Improved efficiency of the linkurls filter when searching long lines
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0alpha1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-03-08</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First alpha release for Horde 4.
+* Html2text filter will use horde/Text_Filter, if available, to wrap text.
+* Add callback parameter to the Html2text filter.
+* XSS filter now uses PHP DOM parser to process incoming text.
+* Remove Horde/Core dependency.
+* Add Horde_Text_Filter_Exception::.
+* Html2text converter now uses XML parser to generate output.
+* Add ability to define filters to use with preg_replace_callback().
+* Add &apos;noprefetch&apos; parameter to XSS filter (Ticket #8836).
+* Add XSS filtering for data URLs in A HREF parameters (Bug #8715).
+* Add support for Google Closure Compiler in javascript minfiy filter.
+* Fix dimming signatures when mixed with quoted text (Bug #4299).
+* Added javascript minify filter.
+* Add support for using the tidy extension when filtering HTML data.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0beta1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-16</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* Horde_Text_Filter#filter() now throws an exception on error (Bug #9640).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0RC1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-22</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First release candidate for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0RC2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2011-03-29</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* Second release candidate for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-06</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First stable release for Horde 4.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-20</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Remove dependency on Horde_Text_Filter_Csstidy.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-24</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Fix deletion of unwanted HTML nodes in XSS filter.
+* [mms] Make sure tidy can parse incoming HTML string (Bug #9946).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.3</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-04-25</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Correct fix for deletion of unwanted HTML nodes in XSS filter.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.4</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-07-27</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Update Latvian translation.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.0</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-09-21</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Horde_Text_Filter_Text2Html now accepts a Horde_Text_Flowed object as input to filter(); allows proper quoting of input text.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.1</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-11-02</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Add some more questionable tags/attributes to strip in the XSS filter.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.2</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-12-06</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Fix unnecessary use of POSIX collating element in Linkurls filter (jr@yaina.de, Bug #10828).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.3</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-02-22</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Merge upstream updates to JsMin filter.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.4</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-04-10</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Fix preg backtrack issue in the Linkurls filter (Bug #11116).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.5</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-05-01</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Support definition lists in HTML-to-text filter (Nathan Barhorst).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.0alpha1</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-07-06</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First alpha release for Horde 5.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.0beta1</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-07-19</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First beta release for Horde 5.
+* [mms] Merge upstream changes to jsmin filter that caused broken compression of jQuery Mobile file.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.0</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-10-30</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* First stable release for Horde 5.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.1</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-11-06</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Update Dutch translation (Arjen de Korte &lt;build+horde@de-korte.org&gt;).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.2</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-11-19</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Jsmin fixes merged from upstream C source.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.3</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2012-11-27</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Improve HTML-to-Text filter.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.4</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-01-10</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [jan] Update Basque translation (Ibon Igartua &lt;ibon.igartua@ehu.es&gt;).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.0.5</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-02-11</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Html2text filter now has improved handling of extra whitespace.
+* [mms] Fix XSS filter removing control characters that cause certain charsets (ISO-2022-JP) to break (Bug #12015).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.1.0</release>
+    <api>2.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-03-05</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Add &apos;words&apos; option to the Words filter.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.1.1</release>
+    <api>2.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-05-06</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] If a preg call exceeds the backtrack limit, fallback to the original text (Bug #12152).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.1.2</release>
+    <api>2.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-05-16</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Handle non-supported htmlspecialchars() charsets in the Text2html filter (Bug #12253).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.1.3</release>
+    <api>2.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-05-28</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Yet more sanity checking in the Text2html filter to workaround incorrect charset information.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.1.4</release>
+    <api>2.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-10-09</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Merge upstream updates to JsMin filter.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.1.5</release>
+    <api>2.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-10-24</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Fix issue from upstream jsmin.c that was breaking parsing of a keyword immediately followed by a regexp (Bug #12787).
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.2.0</release>
+    <api>2.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2013-11-19</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Move JSMin code to a separate package.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.2.1</release>
+    <api>2.2.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2014-05-02</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* [mms] Javascript minification has been deprecated and moved to the Horde_JavascriptMinify package.
+   </notes>
+  </release>
+ </changelog>
+</package>
